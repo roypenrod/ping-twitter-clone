@@ -1,6 +1,8 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
+/* variable declarations */
+
 /* universal */
 
 body {
@@ -54,15 +56,35 @@ p {
 
 /* header */
 
+header.navbar-inverse {
+  background-color: #71B340;
+  border-color: #71B340;
+
+  nav {
+    ul.navbar-right {
+      li {
+        a {
+          color: #ffffff;
+          font-weight: bold;
+
+          &:hover {
+            color: #000000;
+          }
+        }        
+      }
+    }
+  }
+}
+
 #logo {
-  float: left;
-  margin-right: 10px;
-  font-size: 1.7em;
+  font-family: "Ubuntu";
+  font-weight: 700;
+  float: left;  
+  font-size: 2em;
   color: #fff;
-  text-transform: lowercase;
-  letter-spacing: -1px;
-  padding-top: 9px;
-  font-weight: bold;
+  text-transform: lowercase;  
+  padding-top: 5px;
+  padding-bottom: 5px;  
 }
 
 #logo:hover {
@@ -71,33 +93,33 @@ p {
 }
 
 
+/* home page */
+
+#hero-banner {
+  background-color: purple;
+}
+
+
 /* footer */
 
 footer {
   margin-top: 45px;
-  padding-top: 5px;
-  border-top: 1px solid #eaeaea;
-  color: #777;
-}
+  padding-top: 5px;  
 
-footer a {
-  color: #555;
-}
+  ul {
+    list-style: none;        
 
-footer a:hover {
-  color: #222;
-}
+    li {
+      float: left;
+      margin-left: 15px;      
 
-footer small {
-  float: left;
-}
+      a {
+        color: #999;
 
-footer ul {
-  float: right;
-  list-style: none;
-}
-
-footer ul li {
-  float: left;
-  margin-left: 15px;
+        &:hover {
+          color: #2D7DD2;   
+        }          
+      }      
+    }    
+  }
 }

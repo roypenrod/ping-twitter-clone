@@ -1,0 +1,72 @@
+
+
+
+/*
+	===================================
+		Styles -- Page Header
+	===================================
+*/
+
+header {
+	background-color: $header-bgcolor;
+}
+
+header#header-small {
+
+	margin: 0;
+	padding-bottom: 5%;	
+
+	div#container-brand {
+		display: block;
+		padding-top: 5%;
+	  padding-bottom: 2.5%;  
+	  text-align: center;
+	  
+
+		a#logo {
+		  font-family: "Ubuntu";
+		  font-weight: 700;		  
+		  font-size: 4em;
+		  color: $header-logo-color;		
+		  text-decoration: none;			   		  
+		}
+	}
+
+	nav#navbar-top {
+
+		ul {
+
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+			text-align: center;
+
+			li {
+				display: block;
+				background-color: $header-small-navbar-link-bgcolor;
+				margin-bottom: 5%;
+				padding-top: 2.5%;
+				padding-bottom: 2.5%;
+
+				a {
+					font-family: "Roboto";
+					font-weight: 500;
+					font-size: 3em;
+					color: $header-navbar-link-color;	
+					text-decoration: none;					
+				}				
+			}
+
+			li:first-child {
+				margin-top: 2.5%;
+			}
+
+			li:last-child {
+				margin-bottom: 0;
+			}
+		}
+	}
+}
+
+/* media queries */
+
